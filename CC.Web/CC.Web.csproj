@@ -131,13 +131,57 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\attendee\attendees.html" />
+    <Content Include="app\attendee\attendees.js" />
     <Content Include="app\services\entityManagerFactory.js" />
     <Content Include="app\services\model.js" />
     <Content Include="app\session\sessions.html" />
     <Content Include="app\session\sessions.js" />
+    <Content Include="app\speaker\speakers.html" />
+    <Content Include="app\speaker\speakers.js" />
     <Content Include="App_Data\CodeCamper.sdf" />
     <Content Include="ccfavicon.ico" />
     <Content Include="Content\breeze.directives.css" />
+    <Content Include="Content\images\photos\aaron_skonnard.jpg" />
+    <Content Include="Content\images\photos\brad_green.jpg" />
+    <Content Include="Content\images\photos\colleen_papa.jpg" />
+    <Content Include="Content\images\photos\craig_shoemaker.jpg" />
+    <Content Include="Content\images\photos\dan_wahlin.jpg" />
+    <Content Include="Content\images\photos\dave_ward.jpg" />
+    <Content Include="Content\images\photos\elijah_manor.jpg" />
+    <Content Include="Content\images\photos\eric_barnard.jpg" />
+    <Content Include="Content\images\photos\esteban_garcia.jpg" />
+    <Content Include="Content\images\photos\felix_fanboi.jpg" />
+    <Content Include="Content\images\photos\fritz_onion.jpg" />
+    <Content Include="Content\images\photos\glenn_block.jpg" />
+    <Content Include="Content\images\photos\hans_fjallemark.jpg" />
+    <Content Include="Content\images\photos\howard_dierking.jpg" />
+    <Content Include="Content\images\photos\igor_minar.jpg" />
+    <Content Include="Content\images\photos\jason_salmond.jpg" />
+    <Content Include="Content\images\photos\jesse_liberty.jpg" />
+    <Content Include="Content\images\photos\jim_cowart.jpg" />
+    <Content Include="Content\images\photos\john_papa.jpg" />
+    <Content Include="Content\images\photos\john_smith.jpg" />
+    <Content Include="Content\images\photos\john_sonmez.jpg" />
+    <Content Include="Content\images\photos\julie_lerman.jpg" />
+    <Content Include="Content\images\photos\keith_sparkjoy.jpg" />
+    <Content Include="Content\images\photos\mads_kristensen.jpg" />
+    <Content Include="Content\images\photos\megan_russell.jpg" />
+    <Content Include="Content\images\photos\mike_callaghan.jpg" />
+    <Content Include="Content\images\photos\mike_woodring.jpg" />
+    <Content Include="Content\images\photos\pete_brown.jpg" />
+    <Content Include="Content\images\photos\rey_bango.jpg" />
+    <Content Include="Content\images\photos\rob_eisenberg.jpg" />
+    <Content Include="Content\images\photos\ryan_niemeyer.jpg" />
+    <Content Include="Content\images\photos\scott_guthrie.jpg" />
+    <Content Include="Content\images\photos\scott_hanselman.jpg" />
+    <Content Include="Content\images\photos\scott_hunter.jpg" />
+    <Content Include="Content\images\photos\shawn_wildermuth.jpg" />
+    <Content Include="Content\images\photos\steve_sanderson.jpg" />
+    <Content Include="Content\images\photos\sue_menot.jpg" />
+    <Content Include="Content\images\photos\tim_heuer.jpg" />
+    <Content Include="Content\images\photos\unknown_person.jpg" />
+    <Content Include="Content\images\photos\ward_bell.jpg" />
     <Content Include="packages.config" />
     <Content Include="scripts\angular.min.js.map" />
     <Content Include="scripts\angular-animate.min.js.map" />
@@ -163,8 +207,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\admin\admin.html" />
-    <Content Include="app\admin\admin.js" />
     <Content Include="app\app.js" />
     <Content Include="app\common\bootstrap\bootstrap.dialog.js" />
     <Content Include="app\common\common.js" />
