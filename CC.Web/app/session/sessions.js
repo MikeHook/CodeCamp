@@ -14,9 +14,9 @@
         var getLogFn = common.logger.getLogFn;
         var log = getLogFn(controllerId);
 
-        // Bindable properties and functions are placed on vm.
-        vm.activate = activate;
+        // Bindable properties and functions are placed on vm.        
         vm.sessions = [];
+        vm.refresh = refresh;
         vm.title = 'Sessions';
 
         activate();
@@ -27,10 +27,14 @@
                 .then(function () { log('Activated Sessions View'); });
         }
 
-        function getSessions() {
-            return datacontext.getSessionPartials().then(function (data) {
+        function getSessions(forceRefresh) {
+            return datacontext.getSessionPartials(forceRefresh).then(function (data) {
                 return vm.sessions = data;
             });
+        }
+
+        function refresh() {
+            getSessions(true);
         }
     }
 })();

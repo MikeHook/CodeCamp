@@ -9,8 +9,19 @@
     //model.$inject = ['$http'];
 
     function model() {
+        var entityNames = {
+            attendee: 'Person',
+            person: 'Person',
+            speaker: 'Person',
+            session: 'Session',
+            room: 'Room',
+            track: 'Track',
+            timeslot: 'TimeSlot'
+        }
+
         var service = {
-            configureMetadataStore: configureMetadataStore
+            configureMetadataStore: configureMetadataStore,
+            entityNames: entityNames
         };
 
         return service;
@@ -26,7 +37,9 @@
         function registerPerson(metadataStore) {
             metadataStore.registerEntityTypeCtor('Person', Person);
 
-            function Person() { }
+            function Person() {
+                this.isSpeaker = false;
+            }
 
             Object.defineProperty(Person.prototype, 'fullName', {
                 get: function () {
