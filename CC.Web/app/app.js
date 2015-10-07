@@ -16,9 +16,10 @@
     ]);
     
     // Handle routing errors and success events
-    app.run(['$route', 'datacontext',  
-        function ($route, datacontext) {
+    app.run(['$route', 'datacontext', 'routeMediator',
+        function ($route, datacontext, routeMediator) {
             // Include $route to kick start the router.
-            datacontext.prime();
+
+            routeMediator.setRoutingHandlers();
         }]);        
 })();
